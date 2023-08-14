@@ -1,6 +1,6 @@
-# Rust Enum Question
+# Rust Enum Question 1
 
-## Question
+## Question 1
 
 Create a Rust enum called `Sport` that has the following variants:
 
