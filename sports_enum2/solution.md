@@ -30,10 +30,12 @@ fn main() {
 
     println!("{:?}", current_sport);
 
+    // Use Method
     current_sport.change_sport(Sport::Basketball);
 
     println!("{:?}", current_sport);
 
+    // Use Associated Function
     Sport::associate_sport(&mut current_sport, Sport::Volleyball);
 
     println!("{:?}", current_sport);
