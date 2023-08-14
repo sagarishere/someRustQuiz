@@ -3,26 +3,27 @@
 ```rust
 // METHOD WAY (not associated function)
 
-#[allow(dead_code)]
+#![allow(dead_code)]
+
 #[derive(Debug)]
 enum Sports{
   Basketball, Volleyball, Football, Cricket,
 }
 
 impl Sports{
-    fn change_sports(&mut self, change_to: Sports) {
-     *self = change_to
+    fn change_sport(&mut self, new_sport: Sports) {
+     *self = new_sport
     }
 }
 
 fn main() {
-    let mut my_sport = Sports::Basketball;
+    let mut current_sport = Sports::Basketball;
 
-    println!("{:#?}", my_sport);
+    println!("{:#?}", current_sport);
 
-    my_sport.change_sports(Sports::Volleyball);
+    current_sport.change_sport(Sports::Volleyball);
 
-    println!("{:#?}", my_sport);
+    println!("{:#?}", current_sport);
 }
 ```
 
